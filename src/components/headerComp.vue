@@ -95,7 +95,7 @@
   <style >
   @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
-  
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
   :root {
     --color-primary: #2AF598;
     --color-secondary: #009EFD;
@@ -128,7 +128,7 @@
   }
   
   header {
-  background-image: url(../assets/Hero.png);
+  background-image: url(../assets/image/Hero.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -349,8 +349,6 @@ button[type="submit"] {
   cursor: default;
   margin-top: -210px;
 }
-.price__flower__flower > span{
-      font-size: 20px;
-}
+
   </style>
   

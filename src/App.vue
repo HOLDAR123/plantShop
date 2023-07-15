@@ -1,16 +1,13 @@
 <template>
-<headerComp></headerComp>
-<sellerProduct></sellerProduct>
+<mainComp></mainComp>
 </template>
 
 <script>
-import headerComp from './components/headerComp.vue'
-import sellerProduct from './components/sellerProduct.vue'
+import mainComp from './components/mainComp'
 export default {
   name: 'App',
   components: {
-    headerComp,
-    sellerProduct
+    mainComp
   }
 }
 </script>
