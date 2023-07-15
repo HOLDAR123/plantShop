@@ -92,7 +92,7 @@
   };
   </script>
   
-  <style >
+  <style>
   @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
@@ -148,12 +148,14 @@ nav {
 
 ul {
   list-style-type: none;
+}
+.list__nav{
   margin: 0;
   padding: 0;
   display: flex;
-}
+} 
 
-li {
+.list__nav > li{
   margin: 20px;
   font-size: 20px;
 }
