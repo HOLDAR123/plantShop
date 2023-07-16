@@ -72,8 +72,8 @@
   
   .v-content {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Распределение по 5 колонкам */
-    grid-column-gap: 20px; /* Расстояние между колонками */
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 20px; 
   }
   
   .v-news-latter,
