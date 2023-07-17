@@ -1,7 +1,7 @@
 <template lang="">
 <div class='v-itemss'>
     <div class='v-container'>
-        <CatalogShopItems v-for="item in items" :key="item.index"  v-bind:item_data = 'item'></CatalogShopItems>
+        <CatalogShopItems v-for="item in $store.getters.getAllProducts" :key="item.index"  v-bind:item_data = 'item'></CatalogShopItems>
     </div>
 </div>
 </template>
@@ -12,39 +12,8 @@ export default {
     components:{
         CatalogShopItems
     },
-    data(){
-        return{
-            items:[
-                {   
-                    index: 1,
-                    image: '1.png',
-                    name: 'Philodendron',
-                    stars: 5,
-                    price: '$65.00',
-                },
-                {   
-                    index: 2,
-                    image: '2.png',
-                    name: 'Alocasia',
-                    stars: 3,
-                    price: '$34.00',
-                },
-                {
-                    index: 3,
-                    image: '3.png',
-                    name: 'Cammile',
-                    stars: 4,
-                    price: '$99.00'
-                },
-                {
-                    index: 4,
-                    image: '1.png',
-                    name: 'Weed',
-                    stars: 1,
-                    price: '$19.00'  
-                }
-            ]
-        }
+    mounted(){
+      this.$store.dispatch('fetchProducts')
     }
 }
 

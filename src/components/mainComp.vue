@@ -15,6 +15,7 @@
     import roomSelector from './roomSelector.vue'
     import howToCare from './howToCare.vue'
     import footerComp from './footerComp.vue'
+    
     export default {
       name: 'mainComp',
       components: {
